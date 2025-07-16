@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squirrel DJ | Experience the Frequency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <div id="pulse-bg"></div>
+
+    <header class="nav">
+      <div class="logo">SquirrelDJ</div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">The Artist</a></li>
+          <li><a href="#vision">Vision</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero" id="hero">
+      <div class="video-wrapper">
+        <video id="dj-video" autoplay muted loop playsinline>
+          <source src="squirrel.mp4" type="video/mp4" />
+
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="gradient-overlay"></div>
+      </div>
+      <div class="hero-text">
+        <h1 class="animate-text">Sound. Style. Squirrel.</h1>
+        <p class="animate-subtext">One beat at a time.</p>
+        <button onclick="toggleAudio()">Unmute</button>
+      </div>
+    </main>
+
+    <section class="info-section" id="about">
+      <div class="info-text">
+        <h2 class="animate-fadein">About the Artist</h2>
+        <p>
+          The squirrel’s been spinning in the shadows. Now he takes the stage
+          with lo-fi beats and tail-whipping tempos that turn heads and twist
+          knobs.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-section dark" id="vision">
+      <div class="info-text">
+        <h2 class="animate-fadein">The Vision</h2>
+        <p>
+          This isn’t just about music. It’s about presence, aesthetic, and
+          motion. A quiet revolution — with paws.
+        </p>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
