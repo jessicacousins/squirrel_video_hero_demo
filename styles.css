@@ -119,14 +119,20 @@ body {
 }
 
 .info-section {
-  padding: 8rem 3rem;
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100vw;
   background: #0e0e11;
+  padding: 8rem 2rem;
+  box-sizing: border-box;
 }
+
 .info-section.dark {
   background: #131316;
 }
+.info-text {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .info-text h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
